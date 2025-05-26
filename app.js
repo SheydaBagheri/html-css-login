@@ -29,3 +29,5 @@ function clearInput(){
     passElem.value = ''
  
 }
+
+//Building an API with Firebase to capture and poste user data
