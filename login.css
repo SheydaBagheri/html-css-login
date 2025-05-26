@@ -5,7 +5,7 @@
 }
 :root{
     --back-color: #fdfefe;
-    --input-color: #5500ff;
+    --input-color: #c6bbdd;
 
 }
 body{
@@ -17,6 +17,8 @@ body{
     height: 100vh;
 }
 .containr{
+    display: flex;
+    flex-direction: column;
     max-width: 1050px;
     width: 100%;
     margin: 0 10px;
@@ -75,6 +77,18 @@ font-size: 2rem;
     padding: 10px;
     cursor: pointer;
     margin: 4%;
+}
+.btn-users{
+   width: 200px;
+   margin: 20px auto;
+   align-items: center;
+   padding: 15px;
+   border-radius: 20px;
+}
+.btn-users a{
+    text-decoration: none;
+    color: #7f4af3;
+    font-size: 15px;
 }
 @media(max-width:800px){
     .img-log {
