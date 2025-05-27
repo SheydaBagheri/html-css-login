@@ -17,8 +17,10 @@ body{
     height: 100vh;
 }
 .containr{
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 1050px;
     width: 100%;
     margin: 0 10px;
@@ -34,6 +36,7 @@ section{
     padding: 10px;
     box-shadow: 5px 5px 5px rgb(0, 0, 0 , 0.5);
 }
+
 .img-log img{
     width: 70%;
 
@@ -90,6 +93,66 @@ font-size: 2rem;
     color: #7f4af3;
     font-size: 15px;
 }
+/* userspage */
+.usersBox{
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+    height:200px;
+    width: 500px;
+    align-items: center;
+    overflow-x: hidden;
+
+
+}
+#wrap-users{
+    padding: 20px;
+    column-gap: 20px;
+    background-color: hsl(209, 11%, 57% , 0.4);
+    width: 100%;
+    margin: 20px;
+
+
+}
+.user{
+    display: flex;
+    justify-content: space-around;
+
+}
+.user div{
+    margin: 15px
+}
+.user button{
+    width: 100px;
+    cursor: pointer;
+}
+/* modal */
+
+.modal{
+     top: 0;
+    position: absolute;
+    background-color: #ffffff;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.modal .modal-btn{
+    padding: 10px;
+}
+.modal .modal-btn button{
+    width: 100px;
+    color: #7f4af3;
+    cursor: pointer;
+ 
+   
+}
+
 @media(max-width:800px){
     .img-log {
         display: none;
@@ -110,6 +173,10 @@ font-size: 2rem;
     .input-log{
         width: 80%;
     }
+    .usersBox{
+        height: 300px;
+        width: 400px;
+    }
 
 
 
@@ -117,6 +184,10 @@ font-size: 2rem;
 @media(max-width:450px){
     .input-log input{
         font: 0.3rem;
+    }
+      .usersBox{
+        height: 400px;
+        width: 300px;
     }
 
 
