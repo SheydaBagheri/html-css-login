@@ -8,6 +8,7 @@ window.addEventListener('load' , ()=>{
 
     allusers()
 })
+//When the window is loaded, the allusers function is activated.
 function allusers(){
  
     fetch('https://ex-js-28188-default-rtdb.firebaseio.com/users.json')
@@ -28,12 +29,13 @@ function allusers(){
                 `
 
         )
-
         
     });
     console.log(userData)});
 
 }
+// In the function allusers ,
+//  we store the information from the API in a variable and create a forEach loop.
 
 function deleteFunc(id){
     userId = id
